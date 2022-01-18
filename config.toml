@@ -1,0 +1,3 @@
+baseURL = 'https://rezepte.ntruessel.ch/'
+languageCode = 'de-CH'
+title = 'Rezeptordner'

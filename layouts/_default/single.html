@@ -1,0 +1,14 @@
+{{ define "main" }}
+<h1>Zutaten</h1>
+<ul>
+    {{ range $ingredient := .Params.ingredients }}
+    <li>{{ $ingredient.amount }} {{ $ingredient.unit }} {{ $ingredient.name }}</li>
+    {{ end }}
+</ul>
+<h1>Zubereitung</h1>
+<ol>
+    {{ range .Params.directions }}
+    <li>{{ . }}</li>
+    {{ end }}
+</ol>
+{{ end }}
